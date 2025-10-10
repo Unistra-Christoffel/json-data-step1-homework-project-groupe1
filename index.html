@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Data Step1 - Homework Project | LP DWCA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--primary-gradient);
+            min-height: 100vh;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .step-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-left: 5px solid #667eea;
+            height: 100%;
+        }
+        
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-gradient);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .btn-demo {
+            background: var(--primary-gradient);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-demo:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            color: white;
+        }
+        
+        .info-section {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin: 40px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <h1><i class="bi bi-braces"></i> JSON Data Step1</h1>
+            <p class="lead">Homework Project - LP DWCA</p>
+            <p class="lead">Université de Strasbourg</p>
+            <p class="mt-4"><strong>Par Mikail Lekesiz</strong> | Groupe 1</p>
+            <p>Professeur: <strong>ERIC CHRISTOFFEL</strong></p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        
+        <!-- Introduction -->
+        <div class="info-section">
+            <h2 class="text-center mb-4">
+                <i class="bi bi-info-circle text-primary"></i> À Propos du Projet
+            </h2>
+            <p class="lead text-center">
+                Ce projet démontre la manipulation et la structuration de données JSON à travers 5 étapes progressives.
+            </p>
+            <div class="row mt-4">
+                <div class="col-md-4 text-center">
+                    <i class="bi bi-file-earmark-code text-primary" style="font-size: 3rem;"></i>
+                    <h5 class="mt-3">5 Étapes</h5>
+                    <p class="text-muted">Progression logique et pédagogique</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="bi bi-code-square text-success" style="font-size: 3rem;"></i>
+                    <h5 class="mt-3">JSON + JavaScript</h5>
+                    <p class="text-muted">Manipulation de données modernes</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="bi bi-eye text-warning" style="font-size: 3rem;"></i>
+                    <h5 class="mt-3">Démos Interactives</h5>
+                    <p class="text-muted">Visualisation en temps réel</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Steps -->
+        <h2 class="text-center text-white mb-5">
+            <i class="bi bi-list-ol"></i> Les 5 Étapes du Projet
+        </h2>
+
+        <div class="row">
+            <!-- Step 1A -->
+            <div class="col-md-6 mb-4">
+                <div class="step-card">
+                    <div class="step-number">1A</div>
+                    <h3><i class="bi bi-file-earmark-text"></i> Liste Simple de Recettes</h3>
+                    <p class="text-muted">
+                        Créer un tableau JSON simple contenant des recettes avec nom et durée.
+                    </p>
+                    <div class="mb-3">
+                        <span class="badge bg-primary">Tableau JSON</span>
+                        <span class="badge bg-info">Objets simples</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <a href="step1A/example/" class="btn btn-demo">
+                            <i class="bi bi-play-circle"></i> Voir la Démo
+                        </a>
+                        <a href="step1A/step1A.json" class="btn btn-outline-primary">
+                            <i class="bi bi-file-code"></i> JSON
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 1B -->
+            <div class="col-md-6 mb-4">
+                <div class="step-card">
+                    <div class="step-number">1B</div>
+                    <h3><i class="bi bi-list-ul"></i> Recettes avec Ingrédients</h3>
+                    <p class="text-muted">
+                        Ajouter un tableau d'ingrédients à chaque recette pour plus de détails.
+                    </p>
+                    <div class="mb-3">
+                        <span class="badge bg-primary">Tableaux imbriqués</span>
+                        <span class="badge bg-info">Objets complexes</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <a href="step1B/example/" class="btn btn-demo">
+                            <i class="bi bi-play-circle"></i> Voir la Démo
+                        </a>
+                        <a href="step1B/step1B.json" class="btn btn-outline-primary">
+                            <i class="bi bi-file-code"></i> JSON
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 1C -->
+            <div class="col-md-6 mb-4">
+                <div class="step-card">
+                    <div class="step-number">1C</div>
+                    <h3><i class="bi bi-diagram-3"></i> Données Relationnelles</h3>
+                    <p class="text-muted">
+                        Créer des tables de référence: catégories, complexités et durées.
+                    </p>
+                    <div class="mb-3">
+                        <span class="badge bg-primary">Normalisation</span>
+                        <span class="badge bg-info">Tables de référence</span>
+                        <span class="badge bg-success">3 fichiers JSON</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <a href="step1C/example/" class="btn btn-demo">
+                            <i class="bi bi-play-circle"></i> Voir la Démo
+                        </a>
+                        <a href="step1C/" class="btn btn-outline-primary">
+                            <i class="bi bi-folder"></i> Dossier
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 1D -->
+            <div class="col-md-6 mb-4">
+                <div class="step-card">
+                    <div class="step-number">1D</div>
+                    <h3><i class="bi bi-link-45deg"></i> Recettes avec Relations</h3>
+                    <p class="text-muted">
+                        Utiliser les IDs de référence pour lier les recettes aux tables.
+                    </p>
+                    <div class="mb-3">
+                        <span class="badge bg-primary">Clés étrangères</span>
+                        <span class="badge bg-info">Jointures</span>
+                        <span class="badge bg-warning">Lookups JS</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <a href="step1D/example/" class="btn btn-demo">
+                            <i class="bi bi-play-circle"></i> Voir la Démo
+                        </a>
+                        <a href="step1D/step1D.json" class="btn btn-outline-primary">
+                            <i class="bi bi-file-code"></i> JSON
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 1E -->
+            <div class="col-md-12 mb-4">
+                <div class="step-card border-warning" style="border-left-width: 8px !important;">
+                    <div class="step-number" style="width: 80px; height: 80px; font-size: 2rem;">1E</div>
+                    <h3><i class="bi bi-app"></i> Application Complète</h3>
+                    <p class="text-muted">
+                        Application web complète intégrant toutes les données avec filtres, recherche et interface interactive.
+                    </p>
+                    <div class="mb-3">
+                        <span class="badge bg-primary">Intégration complète</span>
+                        <span class="badge bg-info">Filtrage dynamique</span>
+                        <span class="badge bg-success">Interface moderne</span>
+                        <span class="badge bg-warning">UX/UI</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <a href="step1E/example/" class="btn btn-demo btn-lg">
+                            <i class="bi bi-play-circle"></i> Voir la Démo
+                        </a>
+                        <a href="step1E/step1E.html" class="btn btn-outline-primary btn-lg">
+                            <i class="bi bi-app-indicator"></i> Application
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technologies -->
+        <div class="info-section">
+            <h2 class="text-center mb-4">
+                <i class="bi bi-tools text-primary"></i> Technologies Utilisées
+            </h2>
+            <div class="row text-center">
+                <div class="col-md-2 col-6 mb-3">
+                    <i class="bi bi-filetype-html text-danger" style="font-size: 3rem;"></i>
+                    <p class="mt-2">HTML5</p>
+                </div>
+                <div class="col-md-2 col-6 mb-3">
+                    <i class="bi bi-filetype-css text-primary" style="font-size: 3rem;"></i>
+                    <p class="mt-2">CSS3</p>
+                </div>
+                <div class="col-md-2 col-6 mb-3">
+                    <i class="bi bi-filetype-js text-warning" style="font-size: 3rem;"></i>
+                    <p class="mt-2">JavaScript</p>
+                </div>
+                <div class="col-md-2 col-6 mb-3">
+                    <i class="bi bi-bootstrap text-purple" style="font-size: 3rem;"></i>
+                    <p class="mt-2">Bootstrap 5</p>
+                </div>
+                <div class="col-md-2 col-6 mb-3">
+                    <i class="bi bi-braces text-success" style="font-size: 3rem;"></i>
+                    <p class="mt-2">JSON</p>
+                </div>
+                <div class="col-md-2 col-6 mb-3">
+                    <i class="bi bi-github text-dark" style="font-size: 3rem;"></i>
+                    <p class="mt-2">GitHub</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center text-white py-4">
+            <p class="mb-2">
+                <a href="https://github.com/lekesiz/json-data-step1-homework-project-groupe1" class="text-white text-decoration-none">
+                    <i class="bi bi-github"></i> Voir sur GitHub
+                </a>
+            </p>
+            <p class="mb-0">
+                © 2025 - LP DWCA - Université de Strasbourg
+            </p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
