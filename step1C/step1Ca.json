@@ -1,2 +1,15 @@
-[{"idCategorie":"1","categorie":"Développement Web"},{"idCategorie":"2","categorie":"DevOps & Cloud"},{"idCategorie":"3","categorie":"Intelligence Artificielle"},{"idCategorie":"4","categorie":"Formation"},{"idCategorie":"5","categorie":"Documentation"},{"idCategorie":"6","categorie":"Réunion"},{"idCategorie":"7","categorie":"Personnel"}]
+[
+  {
+    "id": 1,
+    "nom": "Entrée"
+  },
+  {
+    "id": 2,
+    "nom": "Plat principal"
+  },
+  {
+    "id": 3,
+    "nom": "Dessert"
+  }
+]
 

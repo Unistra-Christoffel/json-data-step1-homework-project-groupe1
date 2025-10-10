@@ -1,2 +1,15 @@
-[{"idComplexite":"1","complexite":"Très simple"},{"idComplexite":"2","complexite":"Simple"},{"idComplexite":"3","complexite":"Moyenne"},{"idComplexite":"4","complexite":"Complexe"},{"idComplexite":"5","complexite":"Très complexe"}]
+[
+  {
+    "id": 1,
+    "niveau": "Facile"
+  },
+  {
+    "id": 2,
+    "niveau": "Moyen"
+  },
+  {
+    "id": 3,
+    "niveau": "Difficile"
+  }
+]
 

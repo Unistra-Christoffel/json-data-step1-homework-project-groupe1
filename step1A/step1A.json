@@ -1,2 +1,33 @@
-{"idTache":"1","libelle":"Finaliser le projet LP DWCA","description":"Compléter tous les exercices HTML, CSS, JavaScript et PHP pour la formation","dateCreation":"2025-10-09","dateFinalisation":"2025-12-15","statut":"En cours","auteur":"Mikail Lekesiz"}
+[
+  {
+    "id": 1,
+    "nom": "Tarte aux pommes",
+    "duree": 45
+  },
+  {
+    "id": 2,
+    "nom": "Quiche lorraine",
+    "duree": 60
+  },
+  {
+    "id": 3,
+    "nom": "Crêpes sucrées",
+    "duree": 20
+  },
+  {
+    "id": 4,
+    "nom": "Soupe à l'oignon",
+    "duree": 30
+  },
+  {
+    "id": 5,
+    "nom": "Mousse au chocolat",
+    "duree": 15
+  },
+  {
+    "id": 6,
+    "nom": "Ratatouille",
+    "duree": 50
+  }
+]
 
