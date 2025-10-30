@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 1A - Liste de Recettes | LP DWCA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 0;
+        }
+        
+        .recipe-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        
+        .recipe-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .header-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .json-display {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header-section">
+            <h1 class="text-center mb-3">
+                <i class="bi bi-egg-fried text-primary"></i> Step 1A - Liste de Recettes
+            </h1>
+            <p class="text-center text-muted mb-0">
+                Démonstration de données JSON - Tableau simple de recettes
+            </p>
+        </div>
+
+        <!-- Recipe Cards -->
+        <div id="recipeContainer" class="row g-4 mb-4">
+            <!-- Les cartes seront générées ici par JavaScript -->
+        </div>
+
+        <!-- JSON Display -->
+        <div class="header-section">
+            <h3 class="mb-3"><i class="bi bi-code-square"></i> Données JSON</h3>
+            <div class="json-display">
+                <pre id="jsonDisplay"></pre>
+            </div>
+        </div>
+
+        <!-- Back Button -->
+        <div class="text-center mt-4">
+            <a href="../../" class="btn btn-light btn-lg">
+                <i class="bi bi-arrow-left"></i> Retour
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Charger et afficher les données JSON
+        fetch('../step1A.json')
+            .then(response => response.json())
+            .then(data => {
+                // Afficher les cartes de recettes
+                displayRecipes(data);
+                
+                // Afficher le JSON brut
+                document.getElementById('jsonDisplay').textContent = JSON.stringify(data, null, 2);
+            })
+            .catch(error => {
+                console.error('Erreur lors du chargement du JSON:', error);
+                document.getElementById('recipeContainer').innerHTML = 
+                    '<div class="alert alert-danger">Erreur lors du chargement des données</div>';
+            });
+
+        function displayRecipes(recipes) {
+            const container = document.getElementById('recipeContainer');
+            
+            recipes.forEach((recipe, index) => {
+                const col = document.createElement('div');
+                col.className = 'col-md-6 col-lg-4';
+                
+                col.innerHTML = `
+                    <div class="card recipe-card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="bi bi-bookmark-star text-warning"></i> ${recipe.nom}
+                            </h5>
+                            <p class="card-text text-muted">
+                                <i class="bi bi-clock"></i> ${recipe.duree} minutes
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-primary">#${index + 1}</span>
+                                <small class="text-muted">ID: ${recipe.id}</small>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                container.appendChild(col);
+            });
+        }
+    </script>
+</body>
+</html>
+

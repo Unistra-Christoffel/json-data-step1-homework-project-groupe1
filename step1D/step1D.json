@@ -1,1 +1,117 @@
+[
+  {
+    "id": 1,
+    "nom": "Tarte aux pommes",
+    "id_categorie": 3,
+    "id_complexite": 2,
+    "id_duree": 2,
+    "ingredients": [
+      "4 pommes",
+      "1 pâte brisée",
+      "100g de sucre",
+      "50g de beurre",
+      "1 oeuf"
+    ]
+  },
+  {
+    "id": 2,
+    "nom": "Quiche lorraine",
+    "id_categorie": 2,
+    "id_complexite": 2,
+    "id_duree": 2,
+    "ingredients": [
+      "1 pâte brisée",
+      "200g de lardons",
+      "3 oeufs",
+      "200ml de crème fraîche",
+      "Sel et poivre"
+    ]
+  },
+  {
+    "id": 3,
+    "nom": "Crêpes sucrées",
+    "id_categorie": 3,
+    "id_complexite": 1,
+    "id_duree": 1,
+    "ingredients": [
+      "250g de farine",
+      "3 oeufs",
+      "500ml de lait",
+      "50g de beurre fondu",
+      "1 pincée de sel"
+    ]
+  },
+  {
+    "id": 4,
+    "nom": "Soupe à l'oignon",
+    "id_categorie": 1,
+    "id_complexite": 1,
+    "id_duree": 1,
+    "ingredients": [
+      "4 oignons",
+      "1L de bouillon de boeuf",
+      "50g de beurre",
+      "Pain rassis",
+      "Fromage râpé"
+    ]
+  },
+  {
+    "id": 5,
+    "nom": "Mousse au chocolat",
+    "id_categorie": 3,
+    "id_complexite": 1,
+    "id_duree": 1,
+    "ingredients": [
+      "200g de chocolat noir",
+      "6 oeufs",
+      "50g de sucre",
+      "1 pincée de sel"
+    ]
+  },
+  {
+    "id": 6,
+    "nom": "Ratatouille",
+    "id_categorie": 2,
+    "id_complexite": 2,
+    "id_duree": 2,
+    "ingredients": [
+      "2 aubergines",
+      "2 courgettes",
+      "2 poivrons",
+      "4 tomates",
+      "2 oignons",
+      "Huile d'olive"
+    ]
+  },
+  {
+    "id": 7,
+    "nom": "Boeuf bourguignon",
+    "id_categorie": 2,
+    "id_complexite": 3,
+    "id_duree": 3,
+    "ingredients": [
+      "1kg de boeuf",
+      "200g de lardons",
+      "3 carottes",
+      "2 oignons",
+      "750ml de vin rouge",
+      "Bouquet garni"
+    ]
+  },
+  {
+    "id": 8,
+    "nom": "Salade niçoise",
+    "id_categorie": 1,
+    "id_complexite": 1,
+    "id_duree": 1,
+    "ingredients": [
+      "Laitue",
+      "4 tomates",
+      "2 oeufs durs",
+      "Thon",
+      "Olives noires",
+      "Anchois"
+    ]
+  }
+]
 

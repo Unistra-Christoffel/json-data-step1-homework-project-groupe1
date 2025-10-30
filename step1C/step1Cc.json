@@ -1,1 +1,15 @@
+[
+  {
+    "id": 1,
+    "temps": "Moins de 30 minutes"
+  },
+  {
+    "id": 2,
+    "temps": "30 à 60 minutes"
+  },
+  {
+    "id": 3,
+    "temps": "Plus d'1 heure"
+  }
+]
 

@@ -1,1 +1,15 @@
+[
+  {
+    "id": 1,
+    "nom": "Entrée"
+  },
+  {
+    "id": 2,
+    "nom": "Plat principal"
+  },
+  {
+    "id": 3,
+    "nom": "Dessert"
+  }
+]
 
